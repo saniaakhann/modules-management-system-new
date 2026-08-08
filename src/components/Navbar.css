@@ -1,0 +1,694 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  background: #161616;
+  color: #f4f4f4;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  /* IMPORTANT:
+     Allows dropdowns to appear below navbar */
+  overflow: visible;
+}
+
+
+/* =========================================
+   MENU
+========================================= */
+
+.menu-wrapper {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  flex: 0 0 48px;
+}
+
+.menu-button {
+  width: 48px;
+  height: 48px;
+
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.menu-button img {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+  object-fit: contain;
+}
+
+
+/* =========================================
+   SITE NAME
+========================================= */
+
+.site-name {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 15px 32px 15px 8px;
+
+  box-sizing: border-box;
+
+  color: #f4f4f4;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  line-height: 18px;
+  letter-spacing: 0.16px;
+
+  white-space: nowrap;
+
+  flex: 0 0 auto;
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-box {
+  width: 407px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 16px;
+
+  box-sizing: border-box;
+
+  background: #2b2b2b;
+
+  color: #525252;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 18px;
+  letter-spacing: 0.16px;
+
+  white-space: nowrap;
+
+  flex: 0 0 407px;
+}
+
+.search-box span {
+  white-space: nowrap;
+}
+
+.search-box img {
+  width: 20px;
+  height: 20px;
+
+  display: block;
+
+  flex: 0 0 20px;
+}
+
+
+/* =========================================
+   SEARCH INTERACTION
+========================================= */
+
+.search-placeholder {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #8d8d8d;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 14px;
+
+  text-align: left;
+
+  cursor: text;
+}
+
+.search-active {
+  padding: 0 16px;
+}
+
+.navbar-search-input {
+  flex: 1;
+
+  width: 100%;
+  min-width: 0;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #f4f4f4;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 14px;
+}
+
+.navbar-search-input::placeholder {
+  color: #8d8d8d;
+}
+
+.search-icon-button {
+  width: 20px !important;
+  height: 20px !important;
+
+  padding: 0 !important;
+
+  border: none !important;
+
+  background: transparent !important;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 20px !important;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.navigation {
+  height: 48px;
+
+  display: flex;
+  align-items: stretch;
+
+  flex: 0 1 auto;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.navigation-divider {
+  width: 17px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  flex: 0 0 17px;
+}
+
+.navigation-divider img {
+  width: 17px;
+  height: 48px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   NAV ITEMS
+========================================= */
+
+.nav-item {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 15px 16px;
+
+  box-sizing: border-box;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #c6c6c6;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 18px;
+  letter-spacing: 0.16px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #262626;
+}
+
+
+/* =========================================
+   CAMPUS
+========================================= */
+
+.campus-item {
+  gap: 8px;
+}
+
+.campus-item img {
+  width: 16px !important;
+  height: 16px !important;
+
+  max-width: 16px;
+  max-height: 16px;
+
+  display: block;
+
+  object-fit: contain;
+
+  flex: 0 0 16px;
+}
+
+
+/* =========================================
+   DROPDOWN WRAPPERS
+========================================= */
+
+.navbar-dropdown-wrapper {
+  position: relative;
+
+  height: 48px;
+
+  z-index: 1000;
+}
+
+.navbar-action-wrapper {
+  position: relative;
+
+  height: 48px;
+
+  z-index: 1000;
+}
+
+
+/* =========================================
+   DROPDOWNS
+========================================= */
+
+.navbar-dropdown {
+  position: absolute;
+
+  top: 48px;
+  left: 0;
+
+  z-index: 99999;
+
+  min-width: 180px;
+
+  padding: 4px 0;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e0e0;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.campus-dropdown {
+  left: 0;
+}
+
+.profile-dropdown {
+  left: auto;
+  right: 0;
+
+  width: 180px;
+}
+
+
+/* =========================================
+   DROPDOWN BUTTONS
+========================================= */
+
+.navbar-dropdown button {
+  width: 100%;
+  height: 38px;
+
+  padding: 0 14px;
+
+  border: none;
+
+  background: #ffffff;
+
+  color: #161616;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 12px;
+  line-height: 16px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.navbar-dropdown button:hover {
+  background: #f4f4f4;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-name {
+  padding: 12px 14px 2px;
+
+  color: #161616;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.profile-role {
+  padding: 0 14px 10px;
+
+  color: #6f6f6f;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   FLEXIBLE SPACE
+========================================= */
+
+.navbar-spacer {
+  height: 48px;
+
+  flex: 1 1 auto;
+
+  min-width: 0;
+}
+
+
+/* =========================================
+   RIGHT ACTIONS
+========================================= */
+
+.navbar-actions {
+  width: 288px;
+  height: 48px;
+
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+
+  flex: 0 0 288px;
+
+  background: #161616;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+========================================= */
+
+.navbar-actions button {
+  width: 48px;
+  height: 48px;
+
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  outline: none;
+
+  background: #161616;
+
+  cursor: pointer;
+
+  flex: 0 0 48px;
+}
+
+.navbar-actions button:hover {
+  background: #262626;
+}
+
+
+/* =========================================
+   ACTION ICONS
+========================================= */
+
+.navbar-actions img {
+  width: 20px;
+  height: 20px;
+
+  max-width: 20px;
+  max-height: 20px;
+
+  display: block;
+
+  object-fit: contain;
+
+  flex: 0 0 20px;
+}
+
+
+/* =========================================
+   RIGHT-SIDE POPUPS
+========================================= */
+
+.navbar-popup {
+  position: absolute;
+
+  top: 48px;
+  right: 0;
+
+  z-index: 99999;
+
+  width: 220px;
+
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e0e0;
+
+  color: #161616;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-popup strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #161616;
+
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+.navbar-popup p {
+  margin: 0 0 12px;
+
+  color: #525252;
+
+  font-size: 11px;
+
+  line-height: 16px;
+}
+
+.navbar-popup button {
+  width: 100%;
+  height: 34px;
+
+  border: none;
+
+  background: #0f62fe;
+
+  color: #ffffff;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+.navbar-popup button:hover {
+  background: #0353e9;
+}
+
+
+/* =========================================
+   SIDE MENU BACKDROP
+========================================= */
+
+.navbar-menu-backdrop {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 4998;
+
+  background: rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   SIDE MENU
+========================================= */
+
+.navbar-side-menu {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  z-index: 4999;
+
+  width: 280px;
+  height: 100vh;
+
+  box-sizing: border-box;
+
+  padding: 16px 0;
+
+  background: #ffffff;
+
+  box-shadow:
+    4px 0 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================
+   SIDE MENU HEADER
+========================================= */
+
+.side-menu-header {
+  height: 48px;
+
+  padding: 0 16px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  color: #161616;
+
+  font-size: 14px;
+}
+
+.side-menu-header button {
+  width: 32px;
+  height: 32px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #161616;
+
+  font-size: 22px;
+
+  cursor: pointer;
+}
+
+.side-menu-header button:hover {
+  background: #f4f4f4;
+}
+
+
+/* =========================================
+   SIDE MENU ITEMS
+========================================= */
+
+.navbar-side-menu > button {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 20px;
+
+  border: none;
+
+  background: #ffffff;
+
+  color: #161616;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 13px;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.navbar-side-menu > button:hover {
+  background: #f4f4f4;
+}

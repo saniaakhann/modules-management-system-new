@@ -1,0 +1,722 @@
+/* =========================================
+   TABLE AREA
+========================================= */
+
+.module-table-area {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FILTER SIDEBAR
+========================================= */
+
+.module-filter-sidebar {
+  width: 170px;
+  min-width: 170px;
+
+  background: #ffffff;
+  border-right: 1px solid #e0e0e0;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+}
+
+.filter-title-row {
+  height: 52px;
+
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-title-row h3 {
+  margin: 0;
+
+  color: #161616;
+
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.filter-close-button {
+  border: none;
+  background: transparent;
+
+  color: #525252;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.filter-group {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-group-title {
+  width: 100%;
+  min-height: 48px;
+
+  padding: 0 16px;
+
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #161616;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+.filter-group-title:hover {
+  background: #f4f4f4;
+}
+
+.filter-options {
+  padding: 0 16px 14px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.filter-options label {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #525252;
+
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.filter-reset-area {
+  margin-top: auto;
+
+  padding: 14px 16px;
+}
+
+.reset-filters-button {
+  border: none;
+  background: transparent;
+
+  color: #8d8d8d;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TABLE CONTAINER
+========================================= */
+
+.module-table-container {
+  flex: 1;
+
+  min-width: 0;
+
+  background: #ffffff;
+
+  /*
+    Important:
+    Do not use overflow:hidden here.
+    It clips the three-dot menu.
+  */
+  overflow-x: auto;
+  overflow-y: visible;
+
+  position: relative;
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.module-table {
+  width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+
+  position: relative;
+}
+
+
+/* =========================================
+   TABLE HEADER
+========================================= */
+
+.module-table thead th {
+  height: 40px;
+
+  padding: 0 12px;
+
+  background: #e0e0e0;
+
+  color: #161616;
+
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  line-height: 16px;
+
+  text-align: left;
+
+  vertical-align: middle;
+
+  border-bottom: 1px solid #c6c6c6;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   COLUMN WIDTHS
+========================================= */
+
+.module-table th:nth-child(1),
+.module-table td:nth-child(1) {
+  width: 36px;
+}
+
+.module-table th:nth-child(2),
+.module-table td:nth-child(2) {
+  width: 24%;
+}
+
+.module-table th:nth-child(3),
+.module-table td:nth-child(3) {
+  width: 18%;
+}
+
+.module-table th:nth-child(4),
+.module-table td:nth-child(4) {
+  width: 17%;
+}
+
+.module-table th:nth-child(5),
+.module-table td:nth-child(5) {
+  width: 17%;
+}
+
+.module-table th:nth-child(6),
+.module-table td:nth-child(6) {
+  width: 11%;
+}
+
+.module-table th:nth-child(7),
+.module-table td:nth-child(7) {
+  width: 12%;
+}
+
+.module-table th:nth-child(8),
+.module-table td:nth-child(8) {
+  width: 36px;
+}
+
+
+/* =========================================
+   NORMAL ROW
+========================================= */
+
+.module-row {
+  position: relative;
+}
+
+.module-row td {
+  height: 48px;
+
+  padding: 0 12px;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  color: #525252;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  box-sizing: border-box;
+}
+
+.module-row:hover {
+  background: #f8f8f8;
+}
+
+.module-row.expanded {
+  background: #ffffff;
+}
+
+
+/* =========================================
+   ARROW
+========================================= */
+
+.arrow-column {
+  padding: 0 !important;
+
+  text-align: center;
+}
+
+.expand-module-button {
+  width: 32px;
+  height: 32px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #525252;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.expand-module-button:hover {
+  background: #e8e8e8;
+}
+
+
+/* =========================================
+   MODULE NAME
+========================================= */
+
+.module-name-link {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #525252;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.module-name-link:hover {
+  color: #0f62fe;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   STATUS
+========================================= */
+
+.module-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  display: inline-block;
+}
+
+.module-status.active .status-dot {
+  background: #24a148;
+}
+
+.module-status.draft .status-dot {
+  background: #8d8d8d;
+}
+
+
+/* =========================================
+   THREE DOT COLUMN
+========================================= */
+
+.menu-column {
+  position: relative !important;
+
+  text-align: center;
+
+  overflow: visible !important;
+}
+
+
+/* =========================================
+   THREE DOT BUTTON
+========================================= */
+
+.module-menu-button {
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #525252;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  position: relative;
+
+  z-index: 10001;
+}
+
+.module-menu-button:hover {
+  background: #e8e8e8;
+}
+
+
+/* =========================================
+   ACTION MENU
+========================================= */
+
+.module-action-menu {
+  position: absolute;
+
+  /*
+    Position it underneath the three dots.
+  */
+  top: 38px;
+
+  right: 8px;
+
+  width: 165px;
+
+  min-height: 1px;
+
+  padding: 4px 0;
+
+  background: #ffffff;
+
+  border: 1px solid #e0e0e0;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.16);
+
+  z-index: 99999;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   ACTION MENU BUTTONS
+========================================= */
+
+.module-action-menu button {
+  width: 100%;
+
+  min-height: 36px;
+
+  padding: 0 14px;
+
+  border: none;
+
+  background: #ffffff;
+
+  color: #161616;
+
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 16px;
+
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+}
+
+.module-action-menu button:hover {
+  background: #f4f4f4;
+}
+
+
+/* =========================================
+   EXPANDED ROW
+========================================= */
+
+.expanded-module-row {
+  background: #f8f8f8;
+
+  position: relative;
+}
+
+.expanded-module-row > td {
+  padding: 0;
+
+  border-bottom: 1px solid #e0e0e0;
+
+  vertical-align: top;
+
+  overflow: visible !important;
+}
+
+
+/* =========================================
+   EXPANDED CONTENT
+========================================= */
+
+.expanded-module-content {
+  min-height: 100px;
+
+  padding: 16px 18px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(280px, 1.8fr)
+    minmax(150px, 0.8fr)
+    minmax(180px, 1fr);
+
+  column-gap: 30px;
+
+  align-items: start;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.summary-section {
+  min-width: 0;
+}
+
+.summary-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: #161616;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.summary-section p {
+  margin: 0;
+
+  color: #525252;
+
+  font-size: 11px;
+
+  line-height: 17px;
+}
+
+
+/* =========================================
+   AI BADGE
+========================================= */
+
+.ai-badge {
+  height: 17px;
+
+  min-width: 23px;
+
+  padding: 0 4px;
+
+  border: 1px solid #8d8d8d;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #525252;
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   EXPANDED INFO
+========================================= */
+
+.expanded-info {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-top: 2px;
+}
+
+.info-item {
+  display: grid;
+
+  grid-template-columns: 90px 1fr;
+
+  gap: 8px;
+
+  font-size: 11px;
+}
+
+.info-label {
+  color: #525252;
+
+  font-weight: 600;
+}
+
+.info-value {
+  color: #525252;
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.module-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding-top: 2px;
+}
+
+.module-tag {
+  min-height: 30px;
+
+  padding: 0 13px;
+
+  border-radius: 16px;
+
+  background: #d9e8f5;
+
+  color: #315f83;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+
+  white-space: nowrap;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   NO RESULTS
+========================================= */
+
+.no-module-results {
+  padding: 40px;
+
+  text-align: center;
+
+  color: #6f6f6f;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .expanded-module-content {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+  .module-tags {
+    grid-column: 1 / -1;
+  }
+}
+
+
+@media (max-width: 700px) {
+
+  .module-filter-sidebar {
+    width: 150px;
+
+    min-width: 150px;
+  }
+
+  .expanded-module-content {
+    grid-template-columns: 1fr;
+  }
+
+  .module-tags {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,49 @@
+.module-status {
+  width: 100%;
+
+  min-height: 40px;
+
+  padding: 0 24px;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  background: #f4f4f4;
+
+  color: #525252;
+
+  font-family: "IBM Plex Sans", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 400;
+
+  line-height: 16px;
+}
+
+
+/* =========================================
+   NUMBERS
+========================================= */
+
+.module-status strong {
+  color: #161616;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   SEPARATOR
+========================================= */
+
+.module-status .separator {
+  color: #8d8d8d;
+
+  margin: 0 2px;
+}
