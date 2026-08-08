@@ -28,3 +28,25 @@ A Modules Management System built using React and Carbon Design System based on 
 
 ```bash
 git clone https://github.com/saniaakhann/modules-management-system-new.git
+2. Navigate to the project
+cd modules-management-system-new
+3. Install dependencies
+npm install
+4. Start the development server
+npm run dev
+
+The application will be available at the local URL provided by Vite, usually:
+
+http://localhost:5173
+Deployment
+
+Live Demo:
+
+https://modules-management-system-new.vercel.app
+
+Repository
+
+GitHub:
+
+https://github.com/saniaakhann/modules-management-system-new
+
